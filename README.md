@@ -14,7 +14,7 @@ Fix "filename too long" errors on Windows by enabling long path support in Git a
 A single PowerShell script that detects your environment and applies the right settings:
 
 - `git config core.longpaths true` (local or global, depending on whether you're in a repo)
-- `LongPathsEnabled = 1` in Windows Registry (HKLM with admin, HKCU without)
+- `LongPathsEnabled = 1` in Windows Registry — HKLM if admin, falls back to HKCU (current user) so no admin rights are needed
 
 ## Installation
 
